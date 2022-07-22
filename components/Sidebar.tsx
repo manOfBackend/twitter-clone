@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
 	BellIcon,
 	BookmarkIcon,
@@ -8,8 +8,9 @@ import {
 	HomeIcon,
 	MailIcon,
 	UserIcon,
-} from "@heroicons/react/outline";
-import SidebarRow from "./SidebarRow";
+} from '@heroicons/react/outline';
+import SidebarRow from './SidebarRow';
+
 function Sidebar() {
 	return (
 		<div className="flex flex-col">
