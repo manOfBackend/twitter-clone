@@ -1,8 +1,7 @@
 import { RefreshIcon } from '@heroicons/react/outline';
 import React from 'react';
 import TweetBox from './TweetBox';
-
-function Feed() {
+ssfunction Feed() {
 	return (
 		<div className="col-span-7 lg:col-span-5">
 			<div className="flex items-center justify-between">
