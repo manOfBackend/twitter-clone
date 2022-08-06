@@ -1,4 +1,4 @@
-import type { GetServerSideProps, NextPage } from 'next';
+import type { GetServerSideProps } from 'next';
 import Head from 'next/head';
 import Feed from '../components/Feed';
 import Sidebar from '../components/Sidebar';
@@ -11,14 +11,15 @@ interface Props {
 }
 const Home = ({ tweets }: Props) => {
 	console.log(tweets);
+
 	return (
-		<div className="mx-auto max-h-screen overflow-hidden lg:max-w-6xl">
+		<div className="mx-auto max-h-screen overflow-x-hidden overflow-y-scroll lg:max-w-6xl">
 			<Head>
 				<title>Twitter 2.0</title>
 			</Head>
 			<main className="grid grid-cols-9">
 				<Sidebar />
-				<Feed />
+				<Feed tweets={tweets} />
 				<Widgets />
 			</main>
 		</div>
@@ -27,7 +28,7 @@ const Home = ({ tweets }: Props) => {
 
 export default Home;
 
-export const getServerSideProps: GetServerSideProps = async (context) => {
+export const getServerSideProps: GetServerSideProps = async () => {
 	const tweets = await fetchTweets();
 	return {
 		props: {

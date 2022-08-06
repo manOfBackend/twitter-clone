@@ -23,7 +23,7 @@ function TweetBox() {
 						onChange={(e) => setInput(e.target.value)}
 						type="text"
 						className="h-24 w-full text-xl outline-none placeholder:text-xl"
-						placeholder="What's Happening?"
+						placeholder="무슨 일이 일어나고 있나요?"
 					/>
 					<div className="flex items-center">
 						<div className="flex flex-1 space-x-2 text-twitter">
@@ -37,7 +37,7 @@ function TweetBox() {
 							disabled={!input}
 							className="rounded-full bg-twitter px-5 py-2 font-bold text-white disabled:opacity-40"
 						>
-							Tweet
+							트윗하기
 						</button>
 					</div>
 				</form>

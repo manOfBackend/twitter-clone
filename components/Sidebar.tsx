@@ -19,14 +19,14 @@ function Sidebar() {
 				src="https://links.papareact.com/drq"
 				alt=""
 			/>
-			<SidebarRow Icon={HomeIcon} title="Home" />
-			<SidebarRow Icon={HashtagIcon} title="Explore" />
-			<SidebarRow Icon={BellIcon} title="Notifications" />
-			<SidebarRow Icon={MailIcon} title="Messages" />
-			<SidebarRow Icon={BookmarkIcon} title="Bookmarks" />
-			<SidebarRow Icon={CollectionIcon} title="Lists" />
-			<SidebarRow Icon={UserIcon} title="Sign In" />
-			<SidebarRow Icon={DotsCircleHorizontalIcon} title="More" />
+			<SidebarRow Icon={HomeIcon} title="홈" />
+			<SidebarRow Icon={HashtagIcon} title="탐색하기" />
+			<SidebarRow Icon={BellIcon} title="알림" />
+			<SidebarRow Icon={MailIcon} title="쪽지" />
+			<SidebarRow Icon={BookmarkIcon} title="북마크" />
+			<SidebarRow Icon={CollectionIcon} title="리스트" />
+			<SidebarRow Icon={UserIcon} title="로그인" />
+			<SidebarRow Icon={DotsCircleHorizontalIcon} title="더 보기" />
 		</div>
 	);
 }

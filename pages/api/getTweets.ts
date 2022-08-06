@@ -4,7 +4,7 @@ import { Tweet } from '../../typings';
 import { groq } from 'next-sanity';
 import { sanityClient } from '../../sanity';
 const feedQuery = groq`
-	*[_type == "tweet" && !blockTweet] {
+	*[_type == "tweet"] {
 		_id,
 		...
 	} | order(_createdAt desc)
