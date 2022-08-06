@@ -1,9 +1,6 @@
 import { Tweet } from '../typings';
 
-const host =
-	process.env.NODE_ENV === 'production'
-		? `${process.env.URL}`
-		: process.env.NEXT_PUBLIC_BASE_URL;
+const host = process.env.NEXT_PUBLIC_BASE_URL;
 export const fetchTweets = async () => {
 	const res = await fetch(`${host}/api/getTweets`);
 
