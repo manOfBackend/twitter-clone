@@ -18,7 +18,6 @@ function Feed({ tweets: tweetsProps }: Props) {
 		toast.success('업데이트 완료!', {
 			id: refreshToast,
 		});
-		console.log('aaaa');
 	};
 	return (
 		<div className="col-span-7 lg:col-span-5">
